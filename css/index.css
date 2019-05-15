@@ -191,15 +191,16 @@ table {
   border: 1px solid black;
   display: flex;
 }
-table table td th {
-  text-align: left;
-  padding: 8px;
-  border: 1px solid black;
-  border-collapse: collapse;
-  font-size: 1rem;
+table td {
+  text-align: center;
+  padding: 5px;
 }
 table tr :nth-child(odd) {
   background-color: lightgreen;
+}
+.box-1 img {
+  display: flex;
+  max-width: 50%;
 }
 footer {
   background: #e5ca6f;

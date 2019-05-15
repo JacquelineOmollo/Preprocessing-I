@@ -209,16 +209,19 @@ table {
   border: 1px solid black;
   display: flex;
 
-  table td th {
-    text-align: left;
-    padding: 8px;
-    border: 1px solid black;
-    border-collapse: collapse;
-    font-size: @font-size;
+  td {
+    text-align: center;
+    padding: 5px;
   }
+
   tr :nth-child(odd) {
     background-color: @third-color;
   }
+}
+
+.box-1 img {
+  display: flex;
+  max-width: 50%;
 }
 
 footer {
