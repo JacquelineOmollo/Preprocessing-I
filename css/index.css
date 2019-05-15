@@ -185,7 +185,20 @@ header a:hover {
   max-width: 100%;
   height: auto;
 }
-table tr :nth-child(even) {
+table {
+  border-collapse: collapse;
+  max-width: 50%;
+  border: 1px solid black;
+  display: flex;
+}
+table table td th {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+table tr :nth-child(odd) {
   background-color: lightgreen;
 }
 footer {

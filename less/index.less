@@ -204,13 +204,19 @@ header {
 }
 
 table {
+  border-collapse: collapse;
+  max-width: 50%;
+  border: 1px solid black;
+  display: flex;
 
-  td, th {
-    border: 1px solid black;
+  table td th {
     text-align: left;
     padding: 8px;
-  
-    tr :nth-child(even) {
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: @font-size;
+  }
+  tr :nth-child(odd) {
     background-color: @third-color;
   }
 }
