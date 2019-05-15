@@ -133,10 +133,13 @@ table {
 html,
 body {
   height: 100%;
+  font-family: "Kodchasan", sans-serif;
+  font-size: 1rem;
 }
 .container {
   max-width: 800px;
   margin: 0 auto;
+  width: 100%;
   font-size: 1.6rem;
   border: 1px solid black;
   height: 100%;
@@ -151,11 +154,10 @@ header nav {
   display: flex;
   margin: 0 auto;
   padding: 20px;
-  border: 1px solid #e5ca6f;
   width: 100%;
   justify-content: space-around;
   background: #e5ca6f;
-  padding-top: 10px;
+  margin-bottom: 30px;
 }
 header nav a {
   display: flex;
@@ -168,15 +170,31 @@ header a:hover {
 }
 .box-1 {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 .box-1 .side-one {
   display: flex;
   border: 1px solid #edebeb;
-  border-end-end-radius: 2%;
-  width: 95%;
+  width: 50%;
   margin: 0 auto;
+  flex-direction: column;
+  font-size: 1.5rem;
 }
-.box-1 .side-two {
+.box-1 .image-one {
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+table tr :nth-child(even) {
+  background-color: lightgreen;
+}
+footer {
+  background: #e5ca6f;
   display: flex;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 1rem;
+  max-width: 800px;
+  justify-content: center;
 }
